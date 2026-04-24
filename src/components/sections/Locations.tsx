@@ -4,7 +4,7 @@ import { MapPin, Phone, Clock } from "lucide-react";
 const branches = [
   {
     name: "Main Campus",
-    address: "4, Park Avenue 1st Street, Baby Nagar, Seshadripuram, Velachery, Chennai, Tamil Nadu 600042",
+    address: "Plot:8, Door No.4, Park Avenue, 1st Street, Sheshatripuram Main Road, Velachery, Chennai - 600 042",
     phone: "09176111302",
     hours: "Mon–Fri · 8:30 AM – 4:30 PM",
     color: "primary",

@@ -149,7 +149,7 @@ Please reach out with more information.`;
                     <div>
                       <Label>Program</Label>
                       <div className="grid grid-cols-2 gap-2 mt-2">
-                        {["Toddler", "Nursery", "LKG", "UKG"].map((p) => (
+                        {["Playgroup", "Nursery", "Junior KG", "Senior KG"].map((p) => (
                           <button
                             type="button"
                             key={p}

@@ -4,8 +4,8 @@ import { SectionWrap } from "@/components/Decor";
 const programs = [
   {
     icon: Baby,
-    title: "Toddler Program",
-    age: "1.5 – 2.5 yrs",
+    title: "Playgroup",
+    age: "2 Years Onwards",
     desc: "Sensory play, motor skills, and gentle introduction to social learning in a cozy nest environment.",
     color: "primary",
     emoji: "🧸",
@@ -13,23 +13,23 @@ const programs = [
   {
     icon: BookOpen,
     title: "Nursery",
-    age: "2.5 – 3.5 yrs",
+    age: "3 Years Onwards",
     desc: "Storytelling, music, and creative arts that spark curiosity and grow language confidence.",
     color: "secondary",
     emoji: "📚",
   },
   {
     icon: Pencil,
-    title: "LKG",
-    age: "3.5 – 4.5 yrs",
+    title: "Junior KG",
+    age: "4 Years Onwards",
     desc: "Phonics, numbers, and hands-on discovery to build foundational reading and writing skills.",
     color: "mint",
     emoji: "✏️",
   },
   {
     icon: Brain,
-    title: "UKG",
-    age: "4.5 – 5.5 yrs",
+    title: "Senior KG",
+    age: "5 Years Onwards",
     desc: "School-readiness, problem solving, and confident expression through projects and play.",
     color: "lavender",
     emoji: "🧠",
@@ -51,13 +51,16 @@ export const Programs = () => {
 
       <div className="container relative">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="pill bg-mint-soft text-mint-foreground mb-4">📚 Our Programs</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-4">
+            <span className="pill bg-mint-soft text-mint-foreground">📚 Our Programs</span>
+            <span className="pill bg-orange-100 text-orange-600 font-bold border border-orange-200">✨ Admissions Open</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Programs for every{" "}
             <span className="bg-gradient-cta bg-clip-text text-transparent">tiny explorer</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
-            Age-appropriate curricula designed by experts to nurture every stage of early childhood.
+          <p className="text-muted-foreground text-lg italic mt-4">
+            "The Future belong to those who believe in the beauty of their dreams!"
           </p>
         </div>
 
