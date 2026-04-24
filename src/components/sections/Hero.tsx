@@ -16,7 +16,11 @@ export function Hero() {
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2">
         <div className="animate-fade-in-up">
-          <h1 className="mt-5 font-display text-6xl font-extrabold leading-[1.05] tracking-tight md:text-7xl lg:text-8xl">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-background/50 px-3 py-1 pr-4 text-sm font-medium backdrop-blur-sm border border-border/50">
+            <img src="/logo.png" alt="Logo" className="h-6 w-auto" />
+            <span className="text-foreground/80">Premium Early Childhood Care</span>
+          </div>
+          <h1 className="mt-2 font-display text-6xl font-extrabold leading-[1.05] tracking-tight md:text-7xl lg:text-8xl">
             Kidz <span className="bg-gradient-cta bg-clip-text text-transparent">playschool</span>
           </h1>
           <h2 className="mt-4 text-2xl md:text-3xl font-bold text-foreground/80">

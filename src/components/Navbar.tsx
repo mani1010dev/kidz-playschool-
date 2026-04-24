@@ -22,9 +22,9 @@ export function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
       <div className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-border/60 bg-background/80 px-5 py-3 shadow-soft backdrop-blur-lg">
         <Link to="/" className="flex items-center gap-2 font-display text-xl font-bold">
-          <img src="/logo.ico" alt="Kidz playschool Logo" className="h-9 w-auto object-contain" />
+          <img src="/logo.png" alt="Kidz playschool Logo" className="h-10 w-auto object-contain transition-transform hover:scale-105" />
           <span>
-            Kidz <span className="text-primary">playschool</span>
+            Kidz <span className="text-secondary">playschool</span>
           </span>
         </Link>
 

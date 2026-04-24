@@ -11,10 +11,10 @@ export const Footer = () => (
     <div className="container relative pt-12">
       <div className="grid md:grid-cols-4 gap-10 mb-12">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2 mb-4">
-            <img src="/logo.ico" alt="Kidz playschool Logo" className="h-11 w-auto object-contain" />
+          <div className="flex items-center gap-3 mb-6">
+            <img src="/logo.png" alt="Kidz playschool Logo" className="h-14 w-auto object-contain" />
             <div>
-              <div className="font-display font-bold text-xl">Kidz playschool</div>
+              <div className="font-display font-bold text-2xl tracking-tight">Kidz playschool</div>
             </div>
           </div>
           <p className="text-background/70 max-w-md leading-relaxed">
