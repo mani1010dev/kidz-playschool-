@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Playschool design system — soft pastel, child-friendly, professional */
+
+@layer base {
+  :root {
+    /* Pastel palette */
+    --background: 210 60% 98%;
+    --foreground: 230 35% 22%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 35% 22%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 35% 22%;
+
+    /* Sky blue */
+    --primary: 205 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 205 90% 92%;
+
+    /* Peach */
+    --secondary: 20 95% 75%;
+    --secondary-foreground: 20 50% 25%;
+    --secondary-soft: 20 100% 94%;
+
+    /* Mint green */
+    --mint: 155 60% 70%;
+    --mint-foreground: 155 50% 22%;
+    --mint-soft: 155 70% 92%;
+
+    /* Lavender */
+    --lavender: 265 70% 78%;
+    --lavender-foreground: 265 50% 28%;
+    --lavender-soft: 265 80% 95%;
+
+    /* Sunny yellow accent */
+    --sunny: 45 100% 70%;
+    --sunny-foreground: 35 60% 25%;
+    --sunny-soft: 45 100% 92%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 230 15% 50%;
+
+    --accent: 20 100% 94%;
+    --accent-foreground: 20 50% 25%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 30% 90%;
+    --input: 215 30% 92%;
+    --ring: 205 85% 65%;
+
+    --radius: 1.25rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(205 90% 92%) 0%, hsl(265 80% 95%) 50%, hsl(20 100% 94%) 100%);
+    --gradient-sky: linear-gradient(180deg, hsl(205 100% 96%) 0%, hsl(155 70% 96%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(20 100% 94%) 0%, hsl(45 100% 94%) 100%);
+    --gradient-cool: linear-gradient(135deg, hsl(205 90% 92%) 0%, hsl(155 70% 92%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(20 95% 70%) 0%, hsl(345 90% 75%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(205 85% 65%) 0%, hsl(195 90% 60%) 100%);
+
+    /* Soft shadows */
+    --shadow-soft: 0 10px 30px -10px hsl(205 60% 50% / 0.18);
+    --shadow-card: 0 8px 24px -8px hsl(230 30% 40% / 0.12);
+    --shadow-glow: 0 20px 50px -15px hsl(265 70% 70% / 0.35);
+    --shadow-lift: 0 20px 40px -12px hsl(205 60% 50% / 0.25);
+
+    --transition-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Fredoka', 'Nunito', sans-serif;
+    @apply tracking-tight;
+  }
+  html { scroll-behavior: smooth; }
+}
+
+@layer components {
+  .blob {
+    @apply absolute rounded-full blur-3xl opacity-60 pointer-events-none;
+  }
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/60 rounded-3xl;
+    box-shadow: var(--shadow-card);
+  }
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-semibold;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-hero { background-image: var(--gradient-hero); }
+  .bg-gradient-sky { background-image: var(--gradient-sky); }
+  .bg-gradient-warm { background-image: var(--gradient-warm); }
+  .bg-gradient-cool { background-image: var(--gradient-cool); }
+  .bg-gradient-cta { background-image: var(--gradient-cta); }
+  .bg-gradient-primary { background-image: var(--gradient-primary); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-lift { box-shadow: var(--shadow-lift); }
+}
